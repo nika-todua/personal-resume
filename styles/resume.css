@@ -1,0 +1,234 @@
+.resume_main {
+    width: 100%;
+    height: auto;
+    background-color: #e6dace;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation: anim 0.7s both linear;
+}
+
+@keyframes anim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.resume_main .container {
+    padding-top: 126.38px;
+    padding-bottom: 82px;
+    width: 90%;
+    max-width: 724px;
+    height: 100%;
+
+    /* background-color: green; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.resume_main .container .title {
+    position: relative;
+    margin-top: 130px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.resume_main .container .title::after {
+    content: " ";
+    position: absolute;
+    left: -28px;
+    top: 16px;
+
+    width: 20px;
+    height: 20px;
+    background-color: #0050ff;
+}
+
+.resume_main .container .text_btn_box {
+    position: relative;
+    margin-top: 85px;
+    margin-bottom: 58px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resume_main .container .text_btn_box h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: #000;
+}
+
+.resume_main .container .text_btn_box .dovnload_CV {
+    width: 154px;
+    height: 40px;
+
+
+    border-radius: 20px;
+    border: 2px solid #0050ff;
+    background-color: #0050ff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+
+    color: #fff;
+
+    transition: 0.4s;
+}
+
+.resume_main .container .text_btn_box .dovnload_CV:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+.resume_main .container .experience_boxs_cont {
+    width: 100%;
+    height: auto;
+
+}
+
+.resume_main .container .experience_boxs_item {
+    width: 100%;
+    max-width: 724px;
+    height: 367.5px;
+
+    box-shadow: -11.31px 11.31px 25px 0px rgba(138, 131, 124, 0.23);
+    background-color: #fff;
+    display: flex;
+}
+
+.resume_main .container .experience_boxs_item:nth-child(1) {
+    margin-bottom: 38px;
+}
+
+.resume_main .container .experience_boxs_item .left_sec {
+    padding-top: 95px;
+    padding-left: 54px;
+    max-width: 342px;
+    width: 100%;
+    height: 100%;
+}
+
+.resume_main .container .experience_boxs_item .left_sec h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #0050ff;
+}
+
+.resume_main .container .experience_boxs_item .left_sec .name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #000;
+}
+
+.resume_main .container .experience_boxs_item .left_sec .company_name {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+}
+
+.resume_main .container .experience_boxs_item .left_sec .location {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+}
+
+.resume_main .container .experience_boxs_item .right_sec {
+    padding-top: 123px;
+    padding-right: 41px;
+    max-width: 382px;
+    width: 100%;
+    height: 100%;
+}
+.resume_main .container .experience_boxs_item .right_sec .info{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000;
+}
+@media screen and (max-width: 894px){
+    .resume_main .container{
+        padding-top: 91px;
+    }
+    .resume_main .container .title{
+        margin-top: 65px;
+    }
+} 
+@media screen and (max-width: 812px) {
+    .resume_main .container .experience_boxs_item{
+        padding: 40px 15px 50px 23px;
+        flex-direction: column;
+        height: auto;
+    }
+    .resume_main .container .experience_boxs_item .left_sec,
+    .resume_main .container .experience_boxs_item .right_sec{
+        padding: 0;
+        width: 100%;
+        height: auto;
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+    .resume_main .container .experience_boxs_item .left_sec{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .resume_main .container .text_btn_box .dovnload_CV:hover{
+        background-color: #0050ff;
+        color: #fff;
+    }
+    .resume_main .container .text_btn_box .dovnload_CV:active{
+        background-color: transparent;
+        color: #fff;
+    }
+}
+@media screen and (max-width: 510px) {
+    .resume_main .container .experience_boxs_item .left_sec h3{
+        font-size: 15px;
+    }
+    .resume_main .container .experience_boxs_item .right_sec .info{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 408px){
+    .resume_main .container .text_btn_box h2{
+        font-size: 18px;
+    }
+    .resume_main .container .text_btn_box .dovnload_CV{
+        width: 125px;
+        height: 33px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 328px){
+    .resume_main .container .experience_boxs_item .right_sec .info{
+        font-size: 14px;
+    }
+}
