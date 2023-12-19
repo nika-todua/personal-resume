@@ -318,10 +318,30 @@
         width: 90%;
     }
 }
+@media screen and (max-width: 412px) {
+    .content .text_box h2{
+        font-size: 40px;
+    }
+}
 
+@media screen and (max-width: 350px) {
+    .content .text_box{
+        min-height: 260px;
+        width: 80%;
+    }
+    .content .text_box p{
+        min-width: 268px;
+        font-size: 19px;
+    }
+}
 @media screen and (max-width: 340px) {
     .about_main {
         height: 990px;
+    }
+}
+@media screen and (max-width: 325px) {
+    .content .text_box .bio{
+        min-width: 200px;
     }
 }
 
