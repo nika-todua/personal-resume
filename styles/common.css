@@ -97,6 +97,7 @@
 }
 
 footer {
+    position: relative;
     width: 100%;
     height: 110px;
     padding: 0 35px;
@@ -165,7 +166,21 @@ footer .right_sec {
     width: 18px;
     height: 18px;
 }
-
+footer .scroll_top_btn{
+    position: absolute;
+    right: 40px;
+    bottom: 65px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #0055ff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+footer .scroll_top_btn svg{
+    fill: #fff;
+}
 @media screen and (max-width: 894px) {
     .header {
         height: 91px;
@@ -325,6 +340,9 @@ footer .right_sec {
         width: 25px;
         height: 25px;
     }
+footer .scroll_top_btn{
+    display: flex;
+}
 }
 
 @media screen and (max-width: 450px) {
