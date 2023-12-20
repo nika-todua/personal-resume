@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    height: 126.39px;
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+.header .header_inner{
+    position: relative;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .header_inner .cube{
+    width: 16px;
+    height: 16px;
+    background-color: rgb(0, 80, 255);
+}
+.header .header_inner .header_inner_logo{
+    position: absolute;
+    margin-left: 8px;
+    left: 16px;
+
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1em;
+    color: #000;
+}
+.header .header_inner .header_inner_logo .line_text{
+    font-weight: 400;
+    font-size: 14px;
+}
+.header .header_inner .header_inner_logo .two_text-logo{
+    font-weight: 400;
+    line-height: 1.2em;
+    font-size: 17px;
+}
+#check{
+    display: none;
+}
+.header .header_inner .navigation{
+    background-color: #fff;
+}
+.header .header_inner .navigation ul{
+    display: flex;
+    gap: 23px;
+}
+.header .header_inner .navigation ul li{
+    list-style-type: none;
+}
+.header .header_inner .navigation ul li a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+}
+.header .header_inner .navigation ul li.active a{
+    color: rgb(0, 80, 255);
+}
+.header .header_inner .navigation ul li:hover a{
+    color: rgb(0, 80, 255);
+}
+
+.header .header_inner .toggle{
+    display: none;
+}
+
+footer{
+    width: 100%;
+    height: 110px;
+    padding: 0 35px;
+    background-color: #fff;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+}
+footer .right_sec{
+    display: flex;
+    gap: 82px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.call_number_box,
+.email_addres_box,
+.follow_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+.call_number_box .title,
+.email_addres_box .title,
+.follow_box .title{
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+}
+.call_number_box .bumber,
+.email_addres_box a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+}
+.follow_box ul {
+    display: flex;
+    gap: 8px;
+}
+.follow_box ul li {
+    list-style-type: none;
+}
+.follow_box ul li a svg{
+    width: 18px;
+    height: 18px;
+}
+
+@media screen and (max-width: 894px) {
+    .header {
+        height: 91px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header {
+        position: absolute;
+    }
+
+    .header .header_inner {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .header .header_inner .cube {
+        margin-bottom: 25px;
+    }
+
+    .header .header_inner .header_inner_logo {
+        left: 33px;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header .header_inner .header_inner_logo .line_text {
+        display: none;
+    }
+
+    .header .header_inner .header_inner_logo .two_text-logo {
+        position: relative;
+        margin-top: 6px;
+        right: 25px;
+    }
+
+    .header .header_inner .navigation {
+        position: fixed;
+        top: -150px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+
+        opacity: 0;
+        visibility: hidden;
+
+        background-color: #f4ece6;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 7;
+
+        transition: 0.3s linear;
+    }
+
+    #check:checked~.navigation {
+        visibility: visible;
+        opacity: 1;
+        top: 0;
+    }
+
+    .header .header_inner .navigation ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header .header_inner .navigation ul li a {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .header .header_inner .navigation ul li:active a {
+        color: rgb(0, 80, 255);
+    }
+
+    .header .header_inner .toggle {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        z-index: 9;
+    }
+
+    .header .header_inner .toggle .line {
+        width: 26px;
+        height: 3px;
+        border-radius: 1.5px;
+        background-color: rgb(0, 80, 255);
+
+        transition: 0.2s linear;
+    }
+
+    .header .header_inner .toggle .line:nth-child(1),
+    .header .header_inner .toggle .line:nth-child(3) {
+        width: 13px;
+    }
+
+    .header .header_inner .toggle .line:nth-child(1) {
+        position: relative;
+        left: -6px;
+    }
+
+    .header .header_inner .toggle .line:nth-child(3) {
+        position: relative;
+        left: 6px;
+    }
+
+    #check:checked~.toggle {
+        position: fixed;
+        right: 15px;
+    }
+
+    #check:checked~.toggle .line:nth-child(1) {
+        background-color: #000;
+        transform: translate(1px, 9px) rotate(-135deg);
+    }
+
+    #check:checked~.toggle .line:nth-child(2) {
+        background-color: #000;
+        transform: rotate(-45deg);
+    }
+
+    #check:checked~.toggle .line:nth-child(3) {
+        background-color: #000;
+        transform: translate(-1px, -9px) rotate(-135deg);
+    }
+}
+@media screen and (max-width: 710px) {
+    footer {
+        height: auto;
+        padding: 20px 131px 20px 35px;
+        flex-wrap: wrap-reverse;
+    }
+
+    footer .right_sec {
+        width: 100%;
+        max-width: 372px;
+        gap: 10px 58px;
+        margin-bottom: 10px;
+        align-content: start;
+        justify-content: start;
+    }
+    .call_number_box .title,
+    .email_addres_box .title,
+    .follow_box .title{
+        width: 100%;
+        text-align: left;
+    }
+    .follow_box ul li a svg{
+        width: 25px;
+        height: 25px;
+    }
+}
