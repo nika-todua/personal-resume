@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-*,*::after,*::before{
+
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.header{
+
+.header {
     position: fixed;
     width: 100%;
     height: 126.39px;
@@ -15,7 +19,8 @@
     justify-content: center;
     z-index: 999;
 }
-.header .header_inner{
+
+.header .header_inner {
     position: relative;
     width: 95%;
     height: 100%;
@@ -23,12 +28,14 @@
     align-items: center;
     justify-content: space-between;
 }
-.header .header_inner .cube{
+
+.header .header_inner .cube {
     width: 16px;
     height: 16px;
     background-color: rgb(0, 80, 255);
 }
-.header .header_inner .header_inner_logo{
+
+.header .header_inner .header_inner_logo {
     position: absolute;
     margin-left: 8px;
     left: 16px;
@@ -40,100 +47,121 @@
     line-height: 1em;
     color: #000;
 }
-.header .header_inner .header_inner_logo .line_text{
+
+.header .header_inner .header_inner_logo .line_text {
     font-weight: 400;
     font-size: 14px;
 }
-.header .header_inner .header_inner_logo .two_text-logo{
+
+.header .header_inner .header_inner_logo .two_text-logo {
     font-weight: 400;
     line-height: 1.2em;
     font-size: 17px;
 }
-#check{
+
+#check {
     display: none;
 }
-.header .header_inner .navigation{
+
+.header .header_inner .navigation {
     background-color: #fff;
 }
-.header .header_inner .navigation ul{
+
+.header .header_inner .navigation ul {
     display: flex;
     gap: 23px;
 }
-.header .header_inner .navigation ul li{
+
+.header .header_inner .navigation ul li {
     list-style-type: none;
 }
-.header .header_inner .navigation ul li a{
+
+.header .header_inner .navigation ul li a {
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #000;
 }
-.header .header_inner .navigation ul li.active a{
-    color: rgb(0, 80, 255);
-}
-.header .header_inner .navigation ul li:hover a{
+
+.header .header_inner .navigation ul li.active a {
     color: rgb(0, 80, 255);
 }
 
-.header .header_inner .toggle{
+.header .header_inner .navigation ul li:hover a {
+    color: rgb(0, 80, 255);
+}
+
+.header .header_inner .toggle {
     display: none;
 }
 
-footer{
+footer {
     width: 100%;
     height: 110px;
     padding: 0 35px;
     background-color: #fff;
-    
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-footer p{
+
+footer p {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 12px;
     color: #000;
 }
-footer .right_sec{
+
+footer p a {
+    color: #000;
+}
+
+footer .right_sec {
     display: flex;
     gap: 82px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
+
 .call_number_box,
 .email_addres_box,
-.follow_box{
+.follow_box {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Poppins', sans-serif;
 }
+
 .call_number_box .title,
 .email_addres_box .title,
-.follow_box .title{
+.follow_box .title {
     margin-bottom: 4px;
     font-weight: 600;
     font-size: 14px;
     color: #000;
 }
+
 .call_number_box .bumber,
-.email_addres_box a{
+.email_addres_box a {
     text-decoration: none;
     font-weight: 400;
     font-size: 12px;
     color: #000;
 }
+
 .follow_box ul {
     display: flex;
     gap: 8px;
 }
+
 .follow_box ul li {
     list-style-type: none;
 }
-.follow_box ul li a svg{
+
+.follow_box ul li a svg {
     width: 18px;
     height: 18px;
 }
@@ -143,6 +171,7 @@ footer .right_sec{
         height: 91px;
     }
 }
+
 @media screen and (max-width: 768px) {
     .header {
         position: absolute;
@@ -268,6 +297,7 @@ footer .right_sec{
         transform: translate(-1px, -9px) rotate(-135deg);
     }
 }
+
 @media screen and (max-width: 710px) {
     footer {
         height: auto;
@@ -283,14 +313,24 @@ footer .right_sec{
         align-content: start;
         justify-content: start;
     }
+
     .call_number_box .title,
     .email_addres_box .title,
-    .follow_box .title{
+    .follow_box .title {
         width: 100%;
         text-align: left;
     }
-    .follow_box ul li a svg{
+
+    .follow_box ul li a svg {
         width: 25px;
         height: 25px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    footer {
+        height: auto;
+        padding: 20px 35px 20px 35px;
+        flex-wrap: wrap-reverse;
     }
 }

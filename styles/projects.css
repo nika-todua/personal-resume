@@ -1,0 +1,196 @@
+.projects_main {
+    width: 100%;
+    height: auto;
+    background-color: #e6dace;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: anim 0.7s both linear;
+}
+
+@keyframes anim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.projects_main .container {
+    padding-top: 126.375px;
+    padding-bottom: 141px;
+    width: 90%;
+    max-width: 750px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects_main .container .projects_title {
+    position: relative;
+    margin-bottom: 56px;
+    margin-top: 122px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.projects_main .container .projects_title::after {
+    content: " ";
+    position: absolute;
+    left: -28px;
+    top: 16px;
+    width: 20px;
+    height: 20px;
+    background-color: #0050ff;
+}
+
+.projects_main .container .project_bio {
+    margin-bottom: 68px;
+    width: 100%;
+    max-width: 668px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000;
+}
+
+.projects_main .container .cards_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+.projects_main .container .cards_container .cards {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-shadow: -11.31px 11.31px 25px 0px rgba(138,131,124,0.23);
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards_container .cards aside{
+    height: 404px;
+}
+.cards_container .cards .text_sec{
+    padding: 68px 25px 0 0;
+    max-width: 428px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+.cards_container .cards .text_sec .line{
+    position: absolute;
+    width: 10px;
+    height: 50px;
+    background-color: #0050ff;
+}
+.cards_container .cards .text_sec .card_title{
+    margin-left: 38px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0050ff;
+}
+.cards_container .cards .text_sec .role_text{
+    margin-left: 38px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+.cards_container .cards .text_sec .card_bio{
+    margin-top: 42px;
+    margin-left: 38px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+.cards_container .cards .img_sec{
+    width: 100%;
+    max-width: 322px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.cards_container .cards .img_sec img{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+@media screen and (max-width: 894px) {
+    .projects_main .container {
+        padding-top: 91px;
+    }
+    .projects_main .container .projects_title{
+        margin-top: 61px;
+    }
+}
+@media screen and (max-width: 850px){
+    .projects_main .container .projects_title{
+        font-size: 32px;
+    }
+    .projects_main .container .projects_title::after{
+        top: 14px;
+    }
+    .cards_container .cards .text_sec{
+        margin-bottom: 13px;
+        padding: 19px 10px 0 0;
+        max-width: none;
+        background-color: #fff;
+        height: auto;
+    }
+.cards_container .cards .text_sec .card_bio{
+    margin-top: 16px;
+    font-size: 16px;
+}
+.cards_container .cards .img_sec{
+    max-width: none;
+    max-height: 498px;
+}
+}
+@media screen and (max-width: 768px){
+    .projects_main .container .projects_title{
+        margin-bottom: 22px;
+    }
+}
+@media screen and (max-width: 602px){
+    .projects_main .container .projects_title{
+        font-size: 29px;
+    }
+    .projects_main .container .projects_title::after{
+        top: 10px;
+    }
+    .projects_main .container .project_bio{
+        font-size: 14px;
+    }
+    .cards_container .cards .img_sec{
+        max-height: 298px;
+    }   
+}
+@media screen and (max-width: 480px){
+    .cards_container .cards .text_sec .card_title{
+        font-size: 15px;
+    }
+    .cards_container .cards .text_sec .role_text{
+        font-size: 12px;
+    }
+    .cards_container .cards .text_sec .card_bio{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 414px){
+    .cards_container .cards .img_sec{
+        max-height: 198px;
+    }   
+}
