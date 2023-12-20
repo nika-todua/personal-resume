@@ -7,9 +7,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 .header {
     position: fixed;
     width: 100%;
@@ -168,7 +170,8 @@ footer .right_sec {
     width: 18px;
     height: 18px;
 }
-footer .scroll_top_btn{
+
+footer .scroll_top_btn {
     position: absolute;
     right: 40px;
     bottom: 65px;
@@ -180,9 +183,11 @@ footer .scroll_top_btn{
     justify-content: center;
     align-items: center;
 }
-footer .scroll_top_btn svg{
+
+footer .scroll_top_btn svg {
     fill: #fff;
 }
+
 @media screen and (max-width: 894px) {
     .header {
         height: 91px;
@@ -342,9 +347,16 @@ footer .scroll_top_btn svg{
         width: 25px;
         height: 25px;
     }
-footer .scroll_top_btn{
-    display: flex;
-}
+
+    footer .scroll_top_btn {
+        display: flex;
+        opacity: 0;
+        transition: opacity 0.4s;
+    }
+
+    footer:hover .scroll_top_btn {
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 450px) {
