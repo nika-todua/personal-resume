@@ -8,6 +8,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    animation: anim 0.7s both linear;
+}
+
+@keyframes anim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .contact_main .cont {
