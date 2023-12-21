@@ -1,0 +1,205 @@
+.contact_main {
+    width: 100%;
+    height: auto;
+
+    background-color: #e6dace;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_main .cont {
+    padding-top: 126.38px;
+    padding-bottom: 49px;
+    width: 90%;
+    max-width: 679px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.contact_main .cont .main_title {
+    position: relative;
+    margin-top: 122px;
+    margin-bottom: 79px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.contact_main .cont .main_title::after {
+    content: " ";
+    position: absolute;
+    left: -28px;
+    top: 16px;
+    width: 20px;
+    height: 20px;
+    background-color: #0050ff;
+}
+
+.contact_main .cont .contact_box {
+    width: 100%;
+    max-width: 679px;
+    height: auto;
+    box-shadow: -11.31px 11.31px 25px 0px rgba(138,131,124,0.23);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_main .cont .contact_box form {
+    position: relative;
+    margin: 58px 76px 145px 67px;
+    width: 100%;
+    height: 100%;
+    max-width: 518px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact_main .cont .contact_box form .first_name {
+    margin-right: 10px;
+}
+
+.contact_main .cont .contact_box form .first_name,
+.contact_main .cont .contact_box form .last_name {
+    width: 100%;
+    max-width: 247px;
+}
+
+.contact_main .cont .contact_box form .first_name input,
+.contact_main .cont .contact_box form .last_name input {
+    width: 100%;
+}
+
+.contact_main .cont .contact_box form label {
+    padding-bottom: 9px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+}
+
+.contact_main .cont .contact_box form input {
+    margin-bottom: 9px;
+    padding: 3px 3px 3px 15px;
+}
+
+.contact_main .cont .contact_box form input,
+textarea {
+    margin-top: 9px;
+
+    width: 100%;
+    height: 40px;
+    max-width: 518px;
+
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    background-color: transparent;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #0050ff;
+}
+
+.contact_main .cont .contact_box form .first_name label::after,
+.contact_main .cont .contact_box form .last_name label::after,
+.contact_main .cont .contact_box form .email_label::after {
+    content: " *";
+    position: absolute;
+    font-size: 16px;
+    color: #0050ff;
+}
+
+
+.contact_main .cont .contact_box form textarea {
+    height: 100px;
+    padding: 3px 3px 3px 15px;
+}
+
+.contact_main .cont .contact_box form input:hover,
+textarea:hover,
+.contact_main .cont .contact_box form input:focus,
+textarea:focus {
+    border-bottom: 2px solid #0050ff;
+}
+
+.contact_main .cont .contact_box form .btn {
+    position: absolute;
+    left: 0;
+    bottom: -49px;
+    width: 115px;
+    height: 35px;
+
+    border-radius: 20px;
+    border: 2px solid #0050ff;
+    background-color: #0050ff;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+}
+.contact_main .cont .contact_box form .btn:hover{
+    background-color: transparent;
+    color: #000;
+}
+
+@media screen and (max-width: 894px) {
+    .contact_main .cont .main_title {
+        margin-top: 61px;
+        margin-bottom: 48px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .contact_main .cont .main_title {
+        font-size: 32px;
+    }
+
+    .contact_main .cont .main_title::after {
+        top: 14px;
+    }
+}
+
+@media screen and (max-width: 718px) {
+    .contact_main .cont .contact_box form{
+        margin: 33px 8px 101px 8px;
+    }
+    .contact_main .cont .contact_box form .first_name,
+    .contact_main .cont .contact_box form .last_name {
+        max-width: none;
+        width: 100%;
+    }
+
+    .contact_main .cont .contact_box form .btn {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 602px) {
+    .contact_main .cont .main_title {
+        font-size: 29px;
+    }
+
+    .contact_main .cont .main_title::after {
+        top: 10px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .contact_main .cont .contact_box form .btn {
+        width: 100px;
+        height: 30px;
+    }
+}
