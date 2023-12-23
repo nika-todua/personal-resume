@@ -184,7 +184,7 @@ textarea:focus {
     }
 }
 
-@media screen and (max-width: 718px) {
+@media screen and (max-width: 740px) {
     .contact_main .cont .contact_box form{
         margin: 33px 8px 101px 8px;
     }
