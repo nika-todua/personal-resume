@@ -123,7 +123,9 @@ textarea {
     font-size: 14px;
     color: #0050ff;
 }
-
+.contact_main .cont .contact_box form textarea{
+    resize: none;
+}
 .contact_main .cont .contact_box form .first_name label::after,
 .contact_main .cont .contact_box form .last_name label::after,
 .contact_main .cont .contact_box form .email_label::after {
