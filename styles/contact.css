@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     animation: anim 0.7s both linear;
 }
 
@@ -58,7 +58,7 @@
     width: 100%;
     max-width: 679px;
     height: auto;
-    box-shadow: -11.31px 11.31px 25px 0px rgba(138,131,124,0.23);
+    box-shadow: -11.31px 11.31px 25px 0px rgba(138, 131, 124, 0.23);
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -123,9 +123,11 @@ textarea {
     font-size: 14px;
     color: #0050ff;
 }
-.contact_main .cont .contact_box form textarea{
+
+.contact_main .cont .contact_box form textarea {
     resize: none;
 }
+
 .contact_main .cont .contact_box form .first_name label::after,
 .contact_main .cont .contact_box form .last_name label::after,
 .contact_main .cont .contact_box form .email_label::after {
@@ -163,8 +165,10 @@ textarea:focus {
     font-weight: 600;
     font-size: 14px;
     color: #fff;
+    transition: background-color 0.5s, color 0.5s;
 }
-.contact_main .cont .contact_box form .btn:hover{
+
+.contact_main .cont .contact_box form .btn:hover {
     background-color: transparent;
     color: #000;
 }
@@ -187,9 +191,10 @@ textarea:focus {
 }
 
 @media screen and (max-width: 740px) {
-    .contact_main .cont .contact_box form{
+    .contact_main .cont .contact_box form {
         margin: 33px 8px 101px 8px;
     }
+
     .contact_main .cont .contact_box form .first_name,
     .contact_main .cont .contact_box form .last_name {
         max-width: none;
@@ -199,6 +204,16 @@ textarea:focus {
     .contact_main .cont .contact_box form .btn {
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    .contact_main .cont .contact_box form .btn:hover {
+        background-color: #0050ff;
+        color: #fff;
+    }
+
+    .contact_main .cont .contact_box form .btn:active {
+        background-color: transparent;
+        color: #000;
     }
 }
 
@@ -211,6 +226,7 @@ textarea:focus {
         top: 10px;
     }
 }
+
 @media screen and (max-width: 480px) {
     .contact_main .cont .contact_box form .btn {
         width: 100px;
